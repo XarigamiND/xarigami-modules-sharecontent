@@ -1,0 +1,50 @@
+<xar:comment> License: GPL http://www.gnu.org/copyleft/gpl.html </xar:comment>
+<xar:base-include-javascript libname="jquery" libfile="jquery.min" plugin="ui" pluginfile="ui.core.min,ui.dialog.min" style="ui.css" position="body"/>
+<xar:template type="module" module="sharecontent" file="jq-webconfig" />
+<xar:style scope="module" module="sharecontent" file="sharecontent" />
+<xar:comment>Include our jquery code for this template</xar:comment>
+<div class="xar-mod-page">
+    <div class="xar-mod-head">
+        <xar:if condition="!xarRequestIsAJAX()">
+            <xar:template type="module" module="base" file="admin-menu" />
+        </xar:if>
+    </div>
+    <div class="xar-mod-body">
+        <h1><xar:mlstring>Web Configuration</xar:mlstring></h1>
+        <div class="xar-mod-content">
+            <form id="updatewebsites" action="#xarModURL('sharecontent','admin','updatewebconfig')#" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <xar:if condition="$websitenum ge 1">
+                        <p>
+                            <xar:mlstring>Check the websites you want to activate: </xar:mlstring>
+                            <span id="checkcontrols" class="xar-sub"></span>
+                        </p>
+                        <xar:set name="numpercol">$websitenum>1?$websitenum/2 : 1</xar:set>
+                        <xar:set name="counter">1</xar:set>
+
+                        <xar:data-input type="checkboxlist" options="$sitelist" id="weblist" name="weblist" value="$value" displaycolumns="3" layout="column"/>
+                        <!--<ul class="itemlist">
+                         <br />
+                            <xar:foreach in="$websites" key="$key" value="$website">
+                                <li>
+                                    <input type="hidden" value="0" id="active[#$key#]" name="active[#$key#]" />
+                                    <xar:data-input type="checkbox" id="active['.$key.']" name="active['.$key.']" checked="$website['active']" value="1" />
+                                    <a href="#$website['homeurl']#" title="#xarML('submit to')# #$website['title']#"><img src="#$website['image']#" title="#$website['title']#" alt="#$website['title']#" />#$website['title']#</a>
+                                </li>
+                            </xar:foreach>
+
+                        </ul>
+                        -->
+
+                    </xar:if>
+                    </fieldset>
+                    <div class="xar-form-footer">
+                        <input type="submit" value="#xarML('Save config')#" />
+                         <input type="hidden" name="authid" id="authid" value="#$authid#" />
+                    </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+

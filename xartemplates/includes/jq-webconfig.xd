@@ -1,0 +1,26 @@
+<xar:base-include-javascript libname="jquery" libfile="jquery.min" style="ui.css" plugin="ui" pluginfile="ui.core.min" position="body"/>
+<xar:set name="checkall"><xar:mlstring>Check all</xar:mlstring></xar:set>
+<xar:set name="checknone"><xar:mlstring>Uncheck all</xar:mlstring></xar:set>
+<xar:set name="toggleall"><xar:mlstring>Toggle</xar:mlstring></xar:set>
+<xar:set name="togglecode">"
+jQuery(document).ready(function() {
+    var checkall = \"$checkall\";
+    var checknone = \"$checknone\";
+    var toggleall = \"$toggleall\";
+
+    jQuery('#"."checkcontrols').append('[<a href=\"#\" id=\"items_checkall\">'+checkall+'</a> | <a href=\"#\" id=\"items_checknone\">'+checknone+'</a> | <a href=\"#\" id=\"items_checktoggle\">'+toggleall+'</a>]');
+    jQuery('a#" . "items_checkall').click(function() {
+        jQuery('#" . "updatewebsites ul input[type=checkbox]').attr('checked',true);return false;
+    });
+    jQuery('a#" . "items_checknone').click(function() {
+        jQuery('#" . "updatewebsites ul input[type=checkbox]').attr('checked',false);return false;
+    });
+    jQuery('a#" . "items_checktoggle').click(function() {
+        jQuery('#" . "updatewebsites ul input[type=checkbox]').each(function() {
+            jQuery(this).attr('checked', !jQuery(this).attr('checked'));
+        });return false;
+
+    });
+});
+"</xar:set>
+<xar:base-include-javascript type="code" code="$togglecode" position="body"/>

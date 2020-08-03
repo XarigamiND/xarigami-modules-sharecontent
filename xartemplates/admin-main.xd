@@ -1,0 +1,153 @@
+<xar:comment> License: GPL http://www.gnu.org/copyleft/gpl.html </xar:comment>
+<xar:set name="modInfo">xarModGetInfo(xarModGetIDFromName('sharecontent'))</xar:set>
+<div class="xar-mod-page">
+    <div class="xar-mod-head">
+        <xar:if condition="!xarRequestIsAJAX()">
+            <xar:template type="module" module="base" file="admin-menu" />
+        </xar:if>
+    </div>
+    <div class="xar-mod-body">
+        <h1><xar:mlstring>Overview</xar:mlstring></h1>
+        <div class="xar-mod-content">
+            <h2>
+                    <xar:mlstring>Description</xar:mlstring>
+            </h2>
+                <p>
+                    <em><xar:mlstring>Sharecontent is a Xarigami Utility Module.</xar:mlstring></em>
+                    <xar:mlstring>It is currently responsible for accomplishing these tasks:</xar:mlstring>
+                    <ul>
+                        <li><xar:mlstring>Simplifying the task of bookmarking articles (or other hooked items) to the social bookmarking sites you have enabled in Sharecontent's module configuration.  The widget is inspired by Pascal Belloncle's Bookmarkit plugin for Typo, and Kaf Oseo's excellent example for WordPress.</xar:mlstring></li>
+                        <li><xar:mlstring>Providing a user interface to send the hooked item's basic information by email</xar:mlstring></li>
+
+                    </ul>
+                </p>
+                 <h3>
+                    <xar:mlstring>How to use it</xar:mlstring>
+               </h3>
+                <p>
+                    <xar:mlstring>
+                    From the Modules Administration hook the Sharecontent module to any module or itemtype
+                    you need this functionality to be used. The module has been tested with the articles
+                    module but should work with other modules that have display hook functionality.
+                    </xar:mlstring>
+                </p>
+                <h2><xar:mlstring>Sharecontent Administration</xar:mlstring></h2>
+                <p>
+                  <xar:mlstring>
+                    The administration configuration includes three sections. </xar:mlstring>
+                </p>
+                <ol>
+                    <li>
+                    <xar:mlstring>
+                        <strong>Quick config:</strong> this page is dedicated to allowing you to quickly enable or disable social bookmarking sites displayed for users.
+                    </xar:mlstring>
+                    </li>
+                    <li>
+                        <xar:mlstring>
+                        <strong>Mail Config</strong>: this is the 'mail share' configuration and enables the use of the "recommend by email" form. It is disabled
+                        by default. <strong>For extra security, the user needs to have comment privileges to the mail
+                        component of Sharecontent's module in order to be able to see the form</strong>.
+                        To enable such privilege, go to the privileges module, create a privilege for the
+                        mail component of Sharecontent's module with comment level.
+                      </xar:mlstring>
+                    </li>
+                   <li>
+                        <xar:mlstring><strong>Manage Sites </strong>: allows you to easily view and sort existing sites, add new ones,  and edit or delete existing sites. You can also
+                        enable the social bookmarking web sites from this page.
+                        </xar:mlstring>
+                    </li>
+                    <li>
+                        <xar:mlstring><strong>General config </strong>: Turn on text names, and enhanced javascript features.
+                        </xar:mlstring>
+                    </li>
+                </ol>
+                <h3><xar:mlstring>Considerations</xar:mlstring></h3>
+                 <ul>
+                  <li>
+                    <xar:mlstring>
+                     you might have to enable shorturls as most sites won't be able to read ampersands in the url field
+                    </xar:mlstring>
+                </li>
+                <li>  <xar:mlstring>
+                    When using the Email component, in some cases the email may not include meaningful information. This will depend on the module hooked, but specific email
+                    templates can be created that call the hooked modules' API to get specific information. For reference,
+                    you can consult the two articles' templates:
+                    user-sendbymail-articles.xd, which contains the body's message for articles
+                    and user-sendbymail-subject-articles.xd, containing the messages' subject. You will
+                    see there how the article's api is called to retreive missing article's information
+                    such as the article summary.
+                  </xar:mlstring>
+                </li>
+                <li>
+                  <xar:mlstring>
+                    This mail functionality somewhat duplicates functionality of the Recommend module.
+                    Sharecontent works as a hook which is an advantage over Recommend which requires you to add the custom tag in the content module template.
+                    With Sharecontent you won't have to modify your templates, and the user will never have to leave the content modules' display even after sending the email.
+                    The Recommend module instead displays a link that forwards you to a mail form. One advantage of recommend  module is that it includes a
+                    dynamicdata property which wil let site administrators you can pick which items should include the sendtofriend link.
+                    Recommend module also contains other functionality including Invitations.
+                  </xar:mlstring>
+                </li>
+                </ul>
+                <h3>
+                    <xar:mlstring>Included Blocks</xar:mlstring>
+                </h3>
+                <p>
+                    <xar:mlstring>There are no included blocks at this time.</xar:mlstring>
+                </p>
+                 <h3>
+                    <xar:mlstring>Included Hooks</xar:mlstring>
+            </h3>
+                <p>
+                    <xar:mlstring>The Sharecontent hook is a display hook to allow content modules to display links o social bookmarking sites and a web form to email content.</xar:mlstring>
+                </p>
+
+
+
+            <h3>
+                <xar:mlstring>Included Dynamic Data Properties</xar:mlstring>
+            </h3>
+             <ul>
+                <li><xar:mlstring>Sharecontent property:  functionality for any module that supports itemtypes and itemid, with getitemlinks userapi function (eg dynamicdata), as well as hard coded support for articles and xarpages.
+                 The benefit of using the data property is that it can be used to provide custom social bookmarks per itemtype or
+                 wherever you need specific social bookmarks different to those provided by the hook.</xar:mlstring>
+                </li>
+                <li><xar:mlstring>Facebook Like property: easily add a Facebook like icon to your page and adjust options in the property configuration.</xar:mlstring>
+                </li>
+                <li><xar:mlstring>Twitter Tweet property: provides an easy way to add follow, mention, hashtag or tweet icons to your content items, all configurable in the property.</xar:mlstring>
+                </li>
+                <li><xar:mlstring>Google plus one property: add google +1 icons to your content items easily.</xar:mlstring>
+                </li>
+
+            </ul>
+          <h3>
+            <xar:mlstring>Further Information</xar:mlstring>
+          </h3>
+          <p>
+            <xar:mlstring>Further information on the Sharecontent module can be found at</xar:mlstring>
+          </p>
+            <ol>
+                <xar:set name="extlink">'<a href="http://xarigami.com/project/sharecontent" title="'.xarML('Xarigami Sharecontent Module - Extension 894').'">'.xarML('Xarigami Project').'</a>'</xar:set>
+                <li><xar:ml>
+                        <xar:mlstring>Xarigami Articles Project page at #(1).</xar:mlstring>
+                        <xar:mlvar>#$extlink#</xar:mlvar>
+                    </xar:ml>
+                </li>
+                <xar:set name="doclink">'<a href="http://xarigami.com/project/sharecontent?page=resources" title="'.xarML('Related documentation on Xarigami Sharecontent').'">'.xarML('Xarigami Resources').'</a>'</xar:set>
+                <li><xar:ml>
+                        <xar:mlstring>Related tutorials and documentation on Sharecontent found at #(1). </xar:mlstring>
+                        <xar:mlvar>#$doclink#</xar:mlvar>
+                    </xar:ml>
+                </li>
+            </ol>
+            <p class="xar-sub">
+                <xar:ml>
+                    <xar:mlstring>
+                        Xarigami Sharecontent Module - Overview Revision 1.0.0 2011-12-26 for Xarigami Sharecontent V1.1.0
+                    </xar:mlstring>
+                    <xar:mlvar>#$modInfo.version#</xar:mlvar>
+                </xar:ml>
+            </p>
+        </div>
+    </div>
+</div>

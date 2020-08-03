@@ -1,0 +1,103 @@
+<xar:style scope="module" module="sharecontent" file="sharecontent" />
+<xar:template type="module" module="sharecontent" file="jq-webconfig" />
+        <legend>
+            <xar:mlstring>Sharecontent Site Configuration</xar:mlstring>
+        </legend>
+        <xar:if condition="$websitenum ge 1">
+        <div id="updatewebsites">
+<!--
+            <p>
+                <xar:mlstring>Check the websites you want to activate </xar:mlstring>
+                <span id="checkcontrols" class="xar-sub"></span>
+            </p>
+
+            <div class="xar-form-input-wrapper">
+            <ul class="itemlist">
+                <xar:foreach in="$websites" key="$key" value="$website">
+                    <li>
+                        <input type="hidden" value="0" id="active[#$key#]" name="active[#$key#]" />
+                        <xar:data-input type="checkbox" id="active['.$key.']" name="active['.$key.']" checked="$website['active']" value="1" />
+                        <a href="#$website['homeurl']#" title="#xarML('submit to')# #$website['title']#"><img src="#$website['image']#" title="#$website['title']#" alt="#$website['title']#" />#$website['title']#</a>
+                    </li>
+                </xar:foreach>
+            </ul>
+            </div>
+
+            <div class="xar-form-input-wrapper">
+                <label for="#$name#[enableemail]#"class="xar-form-label">
+                    Enable email
+                </label>
+                <xar:set name="fieldid">$id.'_enablemail'</xar:set>
+                <xar:set name="namevalue">$name."[enablemail]"</xar:set>
+                 <xar:data-input type="checkbox" name="$fieldid" id="$namevalue" value="$enablemail" checked="$enablemail"  />
+
+                <xar:if condition="!empty($invalid)">
+                &#160;<span class="xar-error">#$invalid#</span>
+                </xar:if>
+            </div>
+
+  -->
+            <div class="xar-form-input-wrapper">
+                <label for="#$name#[websitelist]#"class="xar-form-label">
+                    <xar:mlstring>Check the websites you want to activate</xar:mlstring>
+                </label>
+                 <span id="checkcontrols" class="xar-sub"></span>
+                <xar:set name="fieldid">$id.'_websitelist'</xar:set>
+                <xar:set name="namevalue">$name."[websitelist]"</xar:set>
+                <xar:data-input type="checkboxlist" options="$websitearray" name="$namevalue" id="$fieldid" value="$websitevalues" layout="column" columns="3"/>
+
+                <xar:if condition="!empty($invalid)">
+                &#160;<span class="xar-error">#$invalid#</span>
+                </xar:if>
+            </div>
+             <div class="xar-form-input-wrapper">
+                <label for="#$name#[enablemail]#"class="xar-form-label">
+                    Enable email
+                </label>
+                <xar:set name="fieldid2">$id.'_enablemail'</xar:set>
+                <xar:set name="namevalue2">$name."[enablemail]"</xar:set>
+                 <xar:data-input type="checkbox" name="$namevalue2" id="$fieldid2" value="1" checked="$enablemail"  />
+
+                <xar:if condition="!empty($invalid)">
+                &#160;<span class="xar-error">#$invalid#</span>
+                </xar:if>
+            </div>
+            <div class="xar-form-input-wrapper">
+                <label for="#$name#[shownames]#"class="xar-form-label">
+                    <xar:mlstring>Show names</xar:mlstring>
+                </label>
+                <xar:set name="fieldid3">$id.'_shownames'</xar:set>
+                <xar:set name="namevalue3">$name."[shownames]"</xar:set>
+                 <xar:data-input type="checkbox" name="$namevalue3" id="$fieldid3" value="1" checked="$shownames"  />
+
+                <xar:if condition="!empty($invalid)">
+                &#160;<span class="xar-error">#$invalid#</span>
+                </xar:if>
+            </div>
+             <div class="xar-form-input-wrapper">
+                <label for="#$name#[displayvertical]#"class="xar-form-label">
+                    <xar:mlstring>Display vertical</xar:mlstring>
+                </label>
+                <xar:set name="fieldid4">$id.'_displayvertical'</xar:set>
+                <xar:set name="namevalue4">$name."[displayvertical]"</xar:set>
+                 <xar:data-input type="checkbox" name="$namevalue4" id="$fieldid4" value="1" checked="$displayvertical"  />
+
+                <xar:if condition="!empty($invalid)">
+                &#160;<span class="xar-error">#$invalid#</span>
+                </xar:if>
+            </div>
+            <div class="xar-form-input-wrapper">
+                <label for="#$name#[usejs]#"class="xar-form-label">
+                    <xar:mlstring>Use javascript (if share site supports it)</xar:mlstring>
+                </label>
+                <xar:set name="fieldid5">$id.'_usejs'</xar:set>
+                <xar:set name="namevalue5">$name."[usejs]"</xar:set>
+                 <xar:data-input type="checkbox" name="$namevalue5" id="$fieldid5" value="1" checked="$usejs"  />
+
+                <xar:if condition="!empty($invalid)">
+                &#160;<span class="xar-error">#$invalid#</span>
+                </xar:if>
+            </div>
+      </div>
+        </xar:if>
+

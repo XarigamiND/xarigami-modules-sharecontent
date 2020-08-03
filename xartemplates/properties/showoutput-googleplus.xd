@@ -1,0 +1,13 @@
+<xar:style scope="module" module="sharecontent" file="sharecontent" />
+<div class="xar-padding-thin">
+<div class="g-plusone" data-annotation="#$annotation#" data-width="#$displaywidth#" data-href="#$plusurl#" data-size="#$buttonsize#"></div>
+    <xar:set name="gplusjs">'
+      (function() {
+        var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+        po.src = "https://apis.google.com/js/plusone.js";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+      })();'
+    </xar:set>
+     <xar:base-include-javascript type="code" code="$gplusjs" position="body"/>
+
+</div>

@@ -1,0 +1,75 @@
+<div class="xar-padding-thick">
+
+    <h2>Description</h2>
+    <p>
+        The Facebook Like dynamic data property allows you to easily add a Facebook button on your site for any page or item and customise it with a number of standard Facebook button attributes.
+    </p>
+    <p>
+        On output, the Facebook Like button will display the standard Facebook Like icon button, and can also display send button, counts and customisable text.
+    </p>
+    <p>
+        There is no value saved for this Dynamic Data property and no input page. All customisation is in the configuration of the property itself or passed into the tag.
+    </p>
+
+    <h2>Attributes</h2>
+    <ul>
+        <li>
+            <strong>layoutstyle</strong>: [default='standard']
+                <br />Determines the style of the button with bubble count or box with count, and other text and can be either 'standard', 'button_count', 'box_count'.
+
+        </li>
+        <li>
+            <strong>scheme</strong>: [default='light']
+            <br />A dark or light color scheme for the button.
+        </li>
+        <li>
+            <strong>sendbutton</strong>: [default=false]
+            <br />When true will display a send button next to the like button.
+        </li>
+                <li>
+            <strong>showfaces</strong>: [default=false]
+            <br />When true will display the profile picture below the link button.
+        </li>
+         <li>
+            <strong>verbtext</strong>: [default=Like]
+            <br />Determines the text to display in the Facebook button.
+        </li>
+         <li>
+            <strong>likeurl</strong>: [default= when empty uses the current page url]
+            <br />The URL that will be submitted to Facebook with the button submit.
+        </li>
+         <li>
+            <strong>displaywidth</strong>: [default= 450]
+            <br />Width in pixels of the widget.
+        </li>
+    </ul>
+
+    <p>
+        Other attributes may be inherited from the parent property.
+    </p>
+    
+    <h2>Usage</h2>
+
+    <h3>Standalone</h3>
+    <ul>
+        <li>
+            <strong>In your template forms:</strong> you can use the data-output tag to display the Facebook button.
+        </li>
+    </ul>
+
+     <pre style="font-size:smaller">
+        &lt;xar:data-display type="facebooklike" layoutstyle="button_count" 
+            <i>[attr1="value1",...]</i> /&gt;
+    </pre>
+    <h3>Defined Data Property</h3>
+     <ol>
+        <li>
+            Defining your data property: You can define the attributes in the Configuration screen. To display the property independently, use the data-display tag anywhere you wish the property to display or hook dynamic data to your module/itemtypes for automatic display.
+        </li>
+    </ol>
+     <pre style="font-size:smaller">
+        &lt;xar:data-input property="$properties['facebooklike']"
+            layoutstyle="button_count" <i>[attr1="value1",...]</i> /&gt;
+    </pre>
+
+  </div>

@@ -1,0 +1,8 @@
+ul.sharecontent {display:inline; list-style-type:none; }
+ul.sharecontent li {display:inline;padding: 0px; margin: 1px;}
+div.sharecontent {display:inline}
+ul.sharevertical {list-style-type:none; padding:0px; margin: 1px;}
+div.sharevertical{ float:left;}
+
+
+

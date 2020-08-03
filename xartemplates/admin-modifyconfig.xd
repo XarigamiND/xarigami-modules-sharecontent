@@ -1,0 +1,40 @@
+<xar:comment> License: GPL http://www.gnu.org/copyleft/gpl.html </xar:comment>
+<div class="xar-mod-page">
+    <div class="xar-mod-head">
+        <xar:if condition="!xarRequestIsAJAX()">
+            <xar:template type="module" module="base" file="admin-menu" />
+        </xar:if>
+    </div>
+    <div class="xar-mod-body">
+        <h1><xar:mlstring>General configuration</xar:mlstring></h1>
+        <div class="xar-mod-content">
+            <form id="generalconfig" action="#xarModURL('sharecontent','admin','updateconfig')#" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <div class="xar-form-input-wrapper">
+                        <label for="showname" class="xar-form-label">
+                            <xar:mlstring>Display site name</xar:mlstring>
+                        </label>
+                        <xar:data-input type="checkbox" name="showname" id="showname" value="1" checked="$showname" />
+                    </div>
+                    <div class="xar-form-input-wrapper">
+                        <label for="displayvertical" class="xar-form-label">
+                            <xar:mlstring>Display vertical</xar:mlstring>
+                        </label>
+                        <xar:data-input type="checkbox" name="displayvertical" id="displayvertical" value="1" checked="$displayvertical" />
+                    </div>
+                    <div class="xar-form-input-wrapper">
+                        <label for="usejs" class="xar-form-label">
+                            <xar:mlstring>Use javascript versions</xar:mlstring>
+                        </label>
+                        <xar:data-input type="checkbox" name="usejs" id="usejs" value="1" checked="$usejs" />
+                        <xar:mlstring>For additional functionality</xar:mlstring>
+                    </div>
+                </fieldset>
+                <div class="xar-form-footer">
+                    <input type="hidden" name="authid" id="authid" value="#$authid#" />
+                    <input type="submit" value="#xarML('Save configuration')#" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

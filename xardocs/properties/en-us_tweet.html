@@ -1,0 +1,83 @@
+<div class="xar-padding-thick">
+
+    <h2>Description</h2>
+    <p>
+       The Twitter Tweet dynamic data property allows you to easily add a Share, Follow, Hash tag or Mention twitter button on your site for any page or item and customise it with a number of standard Facebook button attributes.
+    </p>
+    <p>
+        On output, the Twitter button will display the chosen button type, in addition to customisable options available for each button type.
+    </p>
+    <p>
+        There is no value saved for this Dynamic Data property and no input page. All customisation is in the configuration of the property itself or passed into the tag.
+    </p>
+
+    <h2>Attributes</h2>
+    <ul>
+        <li>
+            <strong>tweettype</strong>: [default='twitter-share-button']
+                <br />Determines the style of the button. Options are 'twitter-share-button', 'twitter-follow-button', 'button_hashtag', or 'screen_name'.
+
+        </li>
+               <li>
+            <strong>tweetname</strong>: [default='']
+            <br />Used in Follow (twitter-follow-button) and Mention (screen_name) buttons and is the twitter name required for the follow or mention button.eg the @follow name.
+        </li>
+        <li>
+            <strong>recommend</strong>: [default='']
+            <br />Used in Follow (twitter-follow-button) and Mention (screen_name) buttons and is the twitter name required for via or mention attribute. eg via #username. 
+        </li>
+        <li>
+            <strong>showcount</strong>: [default='none']
+            <br />By default no count is shown. Other options are 'horizontal' or 'vertical'. These show a count of tweets or shares, and either a veritical or horizontal count box for the share button.
+        </li>
+         <li>
+            <strong>largebutton</strong>: [default=small]
+            <br />When true displays a large button.
+        </li>
+         <li>
+            <strong>tweettext</strong>: [default= current page or article/item title]
+            <br />The text used in the tweet.
+        </li>
+         <li>
+            <strong>hashtag</strong>: [default= '']
+            <br />Hashtag to use in Hash tag (button_hashtag) button.
+        </li>
+        <li>
+            <strong>tweeturl</strong>: [default= the current page url]
+            <br />The URL that will be used in the tweet. When left empty it defaults to the current page url.
+        </li>
+                <li>
+            <strong>counturl</strong>: [default= the tweeturl]
+            <br />The count URL that will be used in the tweet if dfferent to the tweet url. Used to overtly specify the url to be counted (the tweet url might be something else or short url).
+        </li>
+    </ul>
+
+    <p>
+        Other attributes may be inherited from the parent property.
+    </p>
+    
+    <h2>Usage</h2>
+
+    <h3>Standalone</h3>
+    <ul>
+        <li>
+            <strong>In your template forms:</strong> you can use the data-output tag to display the Twitter button.
+        </li>
+    </ul>
+
+     <pre style="font-size:smaller">
+        &lt;xar:data-display type="tweet" layoutstyle="twitter-follow-button" 
+            <i>[attr1="value1",...]</i> /&gt;
+    </pre>
+    <h3>Defined Data Property</h3>
+     <ol>
+        <li>
+            Defining your data property: You can define the attributes in the Configuration screen. To display the property independently, use the data-display tag anywhere you wish the property to display or hook dynamic data to your module/itemtypes for automatic display.
+        </li>
+    </ol>
+     <pre style="font-size:smaller">
+        &lt;xar:data-input property="$properties['tweet']"
+            tweettype="twitter-follow-button" showcount="true" <i>[attr1="value1",...]</i> /&gt;
+    </pre>
+
+  </div>

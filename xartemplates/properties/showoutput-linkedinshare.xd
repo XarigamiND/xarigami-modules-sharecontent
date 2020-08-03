@@ -1,0 +1,18 @@
+<xar:style scope="module" module="sharecontent" file="sharecontent" />
+<xar:base-include-javascript type="src" filename="http://platform.linkedin.com/in.js" position="head"/>
+
+<div class="xar-padding-thin">
+
+            <xar:if condition="$intype eq 'Share'">
+               <script type="IN/Share" data-url="#$shareurl#" data-counter="#$countertype#" data-related="#$showcount#"></script>
+            <xar:elseif condition="$intype eq 'RecommendProduct'" />
+                 <script type="IN/RecommendProduct" data-company="#$companyid#" data-product="#$productid#" data-counter="#$countertype#" data-related="#$showcount#"></script>
+            <xar:elseif condition="$intype eq 'CompanyInsider'" />
+                <script type="IN/CompanyInsider" data-id="#$companyid#" data-modules="innetwork,newhires,jobchanges"></script>
+            <xar:elseif condition="$intype eq 'CompanyProfile'" />
+               <script type="IN/CompanyProfile" data-id="#$companyid#" data-format="#$memberdisplay#"></script>
+            <xar:else  />
+                <script type="IN/MemberProfile" data-id="#$shareurl#" data-format="#$memberdisplay#" data-related="#$showcount#"></script>
+            </xar:if>
+</div>
+

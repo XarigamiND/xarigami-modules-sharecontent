@@ -1,0 +1,45 @@
+Version 1.1.1   1 Jan 2012
+    -sharec-000942  Improvement 	google plus button size
+    -sharec-000941  Improvement 	Allow passing in of params for DD
+    - sharec-000940 Bug 	        Typos in tweet, facebook button code
+    - sharec-000939 Improvement 	Tweet - Count URL not specified
+    - Added more documentation for standalone tags
+
+Version 1.1.0 26 Dec 2011
+    - Add twitter button, facebook and google +,
+    - Add provision for enhanced twitter like, facebook like and googe+ with javascript
+    -  provide configurable vertical or horizontal layout
+    - Add Twitter, Facebook and Google Plus dynamic data properties,
+    - Update and enhanced the existing Sharecontent property.
+Version 1.0.2 -  20 June 2011 xarigami version
+    - update for core 1.4.0 templates
+    - add status messages
+    sharec-000743   Improvement     Remove remaining xarError* calls
+    sharec-000742   Bug     Incorrect js tag in webconfig page
+
+Version 1.0.0 - 3 Jan 2011  xarigami version
+- a number of small bugs and issues as well as key issues as follows:
+    sharec-000725 Bug markup problems
+    sharec-000726 Bug Unwanted display of link in user menu
+    sharec-000723 New feature User interface for managing sites
+    sharec-000724 New feature Sharecontent data property
+
+Version 0.9.6 - xarigami version
+- Replace deprecated code and xar tags
+= Fix install and upgrade to prevent duplication of websites
+- reformat templating and update with data properties
+- replace javascript with jquery
+
+Version 0.9.4 April 21 2007
+  - Some bug fixes
+
+Version 0.9.3
+  - Adding Bcc option to mailshare
+ - Adding two more sites and releasing
+
+Version 0.9.2 April 12, 2007
+  - First commit, moved from module webshare
+
+IDEAS for future versions
+  - allow editing and adding of sites
+  - htmlmail

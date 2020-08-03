@@ -1,0 +1,38 @@
+<xar:comment> License: GPL http://www.gnu.org/copyleft/gpl.html </xar:comment>
+<!-- common admin menu for this module - remove link to the current function -->
+<div class="xar-mod-page">
+    <div class="xar-mod-head">
+        <xar:if condition="!xarRequestIsAJAX()">
+            <xar:template type="module" module="base" file="admin-menu" />
+        </xar:if>
+    </div>
+    <div class="xar-mod-body">
+        <h1><xar:mlstring>Delete Sharecontent Social Site</xar:mlstring></h1>
+        <div class="xar-mod-content">
+
+            <form method="post" action="&xar-modurl-sharecontent-admin-delete;">
+            <fieldset>
+                <legend>
+                    <xar:mlstring>Delete Confirmation</xar:mlstring>
+                </legend>
+                <div class="xar-form-input-wrapper">
+                    <label for="confirm">
+                        <xar:mlstring>Confirm deleting this item ?</xar:mlstring>
+                    </label>
+
+                    <xar:data-display object="$object" tplmodule="sharecontent" />
+                </div>
+            </fieldset>
+
+            <div class="xar-form-footer">
+
+                <input type="hidden" name="authid" id="authid" value="#xarSecGenAuthKey()#" />
+                <input type="hidden" name="itemid" id="itemid" value="#$itemid#" />
+                <input type="submit" name="confirm" value=" #xarML('Yes')# " />
+
+                <input type="submit" name="noconfirm" value="#xarML('Cancel')#" />
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

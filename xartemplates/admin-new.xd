@@ -1,0 +1,46 @@
+<xar:comment> License: GPL http://www.gnu.org/copyleft/gpl.html </xar:comment>
+<!-- common admin menu for this module - remove link to the current function -->
+<div class="xar-mod-page">
+    <div class="xar-mod-head">
+        <xar:if condition="!xarRequestIsAJAX()">
+            <xar:template type="module" module="base" file="admin-menu" />
+        </xar:if>
+    </div>
+    <div class="xar-mod-body">
+        <h1><xar:mlstring>Add Sharecontent Social Site</xar:mlstring></h1>
+        <div class="xar-mod-content">
+            <xar:set name="withupload">#$object->upload#</xar:set>
+            <xar:set name="enctype">'application/x-www-form-urlencoded'</xar:set>
+            <xar:if condition="!empty($withupload)">
+                <xar:set name="enctype">'multipart/form-data'</xar:set>
+            </xar:if>
+            <xar:if condition="!empty($preview)">
+                <fieldset>
+                    <legend><xar:mlstring>Preview</xar:mlstring></legend>
+
+                        <xar:data-display object="$object" tplmodule="sharecontent" />
+                </fieldset>
+            </xar:if>
+
+            <form method="post" action="&xar-modurl-sharecontent-admin-create;" enctype="#$enctype#">
+
+            <fieldset>
+                <legend>
+                    <xar:mlstring>Create new</xar:mlstring>
+                </legend>
+                <xar:data-form object="$object" tplmodule="sharecontent" />
+
+                <div class="xar-form-input-wrapper">
+                    #$hooks#
+                </div>
+                <div class="xar-form-footer">
+                    <input type="submit" name="preview" value="#xarML('Preview')#" />
+                   &#160;&#160;&#160;
+                    <input type="submit" value="#xarML('Create')#" />
+                    <input type="hidden" name="authid" id="authid" value="#$authid#" />
+                </div>
+            </fieldset>
+        </form>
+        </div>
+    </div>
+</div>

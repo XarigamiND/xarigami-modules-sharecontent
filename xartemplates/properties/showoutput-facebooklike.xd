@@ -1,0 +1,17 @@
+<xar:style scope="module" module="sharecontent" file="sharecontent" />
+<div class="xar-padding-thin">
+    <div id="fb-root" style="width:5em"></div>
+    <xar:set name="facebookjs">"
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_GB/all.js##xfbml=1';
+    fjs.parentNode.insertBefore(js, fjs);
+    }
+    (document, 'script', 'facebook-jssdk'));
+    "
+    </xar:set>
+    <div class="fb-like" data-href="#$likeurl#" data-send="#$sendbutton#" data-layout="#$layoutstyle#" data-width="#$displaywidth#" data-show-faces="#$showfaces#" data-action="#$verbtext#" colorscheme="#$scheme#"></div>
+    <xar:base-include-javascript type="code" code="$facebookjs" position="body"/>
+</div>

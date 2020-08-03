@@ -1,0 +1,63 @@
+<div class="xar-padding-thick">
+
+    <h2>Description</h2>
+    <p>
+        The Google Plus dynamic data property allows you to easily add a Google +1 button on your site for any page or item and customise it with a number of standard button attributes.
+    </p>
+    <p>
+        On output, the Google Plus button will display the standard Plus One icon button, and can also display counts and customisable text.
+    </p>
+    <p>
+        There is no value saved for this Dynamic Data property and no input page. All customisation is in the configuration of the property itself or passed into the tag.
+    </p>
+
+    <h2>Attributes</h2>
+    <ul>
+        <li>
+            <strong>annotation</strong>: [default='bubble']
+                <br />Determines the style of the button with bubble with count as default. Can be 'bubble,'inline', or 'none'.
+        </li>
+        <li>
+            <strong>button size</strong>: [default='standard']
+            <br />Size of the google button which can be either 'small', 'standard', 'medium', or 'tall'.
+        </li>
+        <li>
+            <strong>displaywidth</strong>: [default=450]
+            <br />Width in pixels of the widget.
+        </li>
+                <li>
+            <strong>plusurl</strong>: [default= current page URL]
+            <br />Will default to the current page URL when left empty.
+        </li>
+
+    </ul>
+
+    <p>
+        Other attributes may be inherited from the parent property.
+    </p>
+    
+    <h2>Usage</h2>
+
+    <h3>Standalone</h3>
+    <ul>
+        <li>
+            <strong>In your template forms:</strong> you can use the data-output tag to display the Google plus button.
+        </li>
+    </ul>
+
+     <pre style="font-size:smaller">
+        &lt;xar:data-display type="googleplus" annotation="bubble" 
+            <i>[attr1="value1",...]</i> /&gt;
+    </pre>
+    <h3>Defined Data Property</h3>
+     <ol>
+        <li>
+            Defining your data property: You can define the attributes in the Configuration screen. To display the property independently, use the data-display tag anywhere you wish the property to display or hook dynamic data to your module/itemtypes for automatic display.
+        </li>
+    </ol>
+     <pre style="font-size:smaller">
+        &lt;xar:data-input property="$properties['googleplus']"
+            annotation="bubble" <i>[attr1="value1",...]</i> /&gt;
+    </pre>
+
+  </div>

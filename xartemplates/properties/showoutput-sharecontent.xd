@@ -1,0 +1,76 @@
+<xar:style scope="module" module="sharecontent" file="sharecontent" />
+<div class="xar-form-container-after">
+  <xar:set name="usevertical">$displayvertical == 1 ? 'sharevertical' : 'sharecontent'</xar:set>
+  <ul class="#$usevertical#">
+    <xar:foreach in="$websites" key="$key" value="$website">
+        <xar:set name="facebookjs">preg_match('/facebook/',strtolower($website['title']),$match)</xar:set>
+        <xar:set name="twitterjs">preg_match('/twitter/',strtolower($website['title']),$match)</xar:set>
+        <xar:set name="gplusjs">preg_match('/google/',strtolower($website['title']),$match)</xar:set>
+
+        <xar:if condition="$twitterjs and $usejs">
+                <xar:set name="twitterjs">
+                '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");'
+                </xar:set>
+                <li class="shareprop">
+                    <a href="https://twitter.com/share&amp;url=#$website['submiturl']#" class="twitter-share-button" data-counturl="#$website['submiturl']#" ><xar:mlstring>Tweet</xar:mlstring></a>
+                    <xar:base-include-javascript type="code" code="$twitterjs" position="body"/>
+                </li>
+        <xar:elseif condition="$facebookjs and $usejs"/>
+            <li>
+            <div id="fb-root" style="width:5em"></div>
+            <xar:set name="facebookjs">'(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_GB/all.js##xfbml=1";  fjs.parentNode.insertBefore(js, fjs);}(document, "script", "facebook-jssdk"));'
+            </xar:set>
+                <div class="fb-like" data-href="#$website['submiturl']#" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false"></div>
+                <xar:base-include-javascript type="code" code="$facebookjs" position="body"/>
+            </li>
+        <xar:elseif condition="$gplusjs and $usejs"/>
+            <li>
+            <div class="g-plusone" data-size="small"></div>
+            <xar:set name="gplusjs">'
+              (function() {
+                var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+                po.src = "https://apis.google.com/js/plusone.js";
+                var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+              })();'
+            </xar:set>
+             <xar:base-include-javascript type="code" code="$gplusjs" position="body"/>
+            </li>
+        <xar:else />
+            <li>
+              <a href="#$website['submiturl']#" title="#xarML('submit to')# #$website['title']#"><img src="#$website['image']#"
+                    title="#$website['title']#"
+                    alt="#$website['title']#"
+              />
+              <xar:if condition="$showname">
+              <span class="xar-sub">#$website['title']#</span>
+              </xar:if>
+              </a>
+            </li>
+        </xar:if>
+    </xar:foreach>
+  </ul>
+</div>
+<xar:if condition="$usercansend">
+    <div style="margin: 4px 0">
+    <xar:mlstring>Notify by email:</xar:mlstring>
+    <xar:if condition="xarUserIsLoggedIn()">
+        <xar:set name="username">xarUserGetVar('name')</xar:set>
+        <xar:set name="useremail">xarUserGetVar('email')</xar:set>
+    <xar:else />
+        <xar:set name="username">xarML('anonymous')</xar:set>
+        <xar:set name="useremail">xarML('enter your email')</xar:set>
+    </xar:if>
+    <form class="sharecontent" method="post"
+        action="#xarModURL('sharecontent','user','sendbymail')#"
+        enctype="application/x-www-form-urlencoded">
+        <xar:mlstring>Recipient </xar:mlstring><input type="text" name="emails" size="30" />
+        <xar:mlstring>From </xar:mlstring><input type="text" value="#$username#" name="author" size="15" />
+        <xar:mlstring>Sender's mail </xar:mlstring><input type="text" value="#$useremail#" name="senderemail" size="30" />
+        <input type="hidden" name="authid" id="authid" value="#$authid#" />
+        <input type="hidden" name="returnurl" value="#$returnurl#"/>
+        <input type="hidden" name="objectid" id="objectid" value='#$objectid#' />
+        <input type="hidden" name="extrainfo" id="extrainfo" value='#$extrainfo#' />
+        <input type="submit" value="#xarML('Send email')#" />
+    </form>
+</div>
+</xar:if>

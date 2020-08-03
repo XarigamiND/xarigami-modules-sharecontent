@@ -1,0 +1,578 @@
+<items>
+  <sharecontent itemid="1">
+    <site_id>1</site_id>
+    <site_title>del.icio.us</site_title>
+    <home_url>http://del.icio.us</home_url>
+    <submit_url>http://del.icio.us/post?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/delicious.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="2">
+    <site_id>2</site_id>
+    <site_title>Blinklist</site_title>
+    <home_url>http://www.blinklist.com</home_url>
+    <submit_url>http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;amp;Url=#URL#&amp;amp;Title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/blink.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="3">
+    <site_id>3</site_id>
+    <site_title>Blinkbits</site_title>
+    <home_url>http://www.blinkbits.com</home_url>
+    <submit_url>http://www.blinkbits.com/bookmarklets/save.php?v=1&amp;amp;source_url=#URL#&amp;amp;title=#TITLE#&amp;amp;body=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/blinkbits.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="4">
+    <site_id>4</site_id>
+    <site_title>Blogmarks</site_title>
+    <home_url>http://blogmarks.net</home_url>
+    <submit_url>http://blogmarks.net/my/new.php?mini=1&amp;amp;simple=1&amp;amp;url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/blogmarks.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="5">
+    <site_id>5</site_id>
+    <site_title>BlogMemes</site_title>
+    <home_url>http://www.blogmemes.net</home_url>
+    <submit_url>http://www.blogmemes.net/post.php?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/blogmemes.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="6">
+    <site_id>6</site_id>
+    <site_title>Blue Dot</site_title>
+    <home_url>http://bluedot.us</home_url>
+    <submit_url>http://bluedot.us/Authoring.aspx?&gt;u=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/bluedot.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="7">
+    <site_id>7</site_id>
+    <site_title>BuddyMarks</site_title>
+    <home_url>http://buddymarks.com</home_url>
+    <submit_url>http://buddymarks.com/add_bookmark.php?bookmark_title=#TITLE#&amp;amp;bookmark_url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/buddymarks.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="8">
+    <site_id>8</site_id>
+    <site_title>Bumpzee</site_title>
+    <home_url>http://www.bumpzee.com</home_url>
+    <submit_url>http://www.bumpzee.com/bump.php?u=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/bumpzee.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="9">
+    <site_id>9</site_id>
+    <site_title>DotNetKicks</site_title>
+    <home_url>http://www.dotnetkicks.com</home_url>
+    <submit_url>http://www.dotnetkicks.com/kick/?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/dotnetkicks.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="10">
+    <site_id>10</site_id>
+    <site_title>Connotea</site_title>
+    <home_url>http://www.connotea.org</home_url>
+    <submit_url>http://www.connotea.org/addpopup?continue=confirm&amp;amp;uri=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/connotea.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="11">
+    <site_id>11</site_id>
+    <site_title>Del.irio.us</site_title>
+    <home_url>http://de.lirio.us</home_url>
+    <submit_url>http://de.lirio.us/rubric/post?uri=#URL#;title=#TITLE#;when_done=go_back</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/delirious.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="12">
+    <site_id>12</site_id>
+    <site_title>Digg</site_title>
+    <home_url>http://digg.com</home_url>
+    <submit_url>http://digg.com/submit?phase=2&amp;amp;url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/digg.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="13">
+    <site_id>13</site_id>
+    <site_title>Diigo</site_title>
+    <home_url>http://www.diigo.com</home_url>
+    <submit_url>http://www.diigo.com/post?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/diigo.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="14">
+    <site_id>14</site_id>
+    <site_title>DZone</site_title>
+    <home_url>http://www.dzone.com</home_url>
+    <submit_url>http://www.dzone.com/links/add.html?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/dzone.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="15">
+    <site_id>15</site_id>
+    <site_title>Earthlink</site_title>
+    <home_url>http://myfavorites.earthlink.net</home_url>
+    <submit_url>http://myfavorites.earthlink.net/my/add_favorite?v=1&amp;amp;url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/earthlink.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="16">
+    <site_id>16</site_id>
+    <site_title>Fark</site_title>
+    <home_url>http://cgi.fark.com</home_url>
+    <submit_url>http://cgi.fark.com/cgi/fark/edit.pl?new_url=#URL#&amp;amp;new_comment=#TITLE#&amp;amp;new_comment=#TITLE#&amp;amp;linktype=Misc</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/fark.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="17">
+    <site_id>17</site_id>
+    <site_title>FeedMeLinks</site_title>
+    <home_url>http://feedmelinks.com</home_url>
+    <submit_url>http://feedmelinks.com/categorize?from=toolbar&amp;amp;op=submit&amp;amp;url=#URL#&amp;amp;name=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/feedmelinks.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="18">
+    <site_id>18</site_id>
+    <site_title>Furl</site_title>
+    <home_url>http://www.furl.net</home_url>
+    <submit_url>http://www.furl.net/storeIt.jsp?u=#URL#&amp;amp;t=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/furl.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="19">
+    <site_id>19</site_id>
+    <site_title>givealink.org</site_title>
+    <home_url>http://www.givealink.org/</home_url>
+    <submit_url>http://www.givealink.org/cgi-pub/bookmarklet/bookmarkletLogin.cgi?&amp;amp;uri=#URL#&amp;amp;title=#TITLE#&amp;amp;done=go_back</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/givealink.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="20">
+    <site_id>20</site_id>
+    <site_title>Google bookmarks</site_title>
+    <home_url>http://www.google.com/bookmarks</home_url>
+    <submit_url>http://www.google.com/bookmarks/mark?op=edit&amp;amp;bkmk=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/google.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="21">
+    <site_id>21</site_id>
+    <site_title>Igooi</site_title>
+    <home_url>http://www.igooi.com</home_url>
+    <submit_url>http://www.igooi.com/addnewitem.aspx?self=1&amp;amp;noui=yes&amp;amp;jump=close&amp;amp;url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/igooi.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="22">
+    <site_id>22</site_id>
+    <site_title>Kick.ie</site_title>
+    <home_url>http://kick.ie</home_url>
+    <submit_url>http://kick.ie/submit/?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/kickit.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="23">
+    <site_id>23</site_id>
+    <site_title>Lilisto</site_title>
+    <home_url>http://lister.lilisto.com</home_url>
+    <submit_url>http://lister.lilisto.com/?t=#TITLE#&amp;amp;l=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/lilisto.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="24">
+    <site_id>24</site_id>
+    <site_title>LinkaGoGo</site_title>
+    <home_url>http://www.linkagogo.com</home_url>
+    <submit_url>http://www.linkagogo.com/go/AddNoPopup?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/linkagogo.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="25">
+    <site_id>25</site_id>
+    <site_title>Windows Live</site_title>
+    <home_url>https://favorites.live.com</home_url>
+    <submit_url>https://favorites.live.com/quickadd.aspx?marklet=1&amp;amp;mkt=en-us&amp;amp;url=#URL#&amp;amp;title=#TITLE#&amp;amp;top=1</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/live.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="26">
+    <site_id>26</site_id>
+    <site_title>LookLater</site_title>
+    <home_url>http://api.looklater.com</home_url>
+    <submit_url>http://api.looklater.com/bookmarks/save?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/looklater.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="27">
+    <site_id>27</site_id>
+    <site_title>Ma.gnolia</site_title>
+    <home_url>http://ma.gnolia.com</home_url>
+    <submit_url>http://ma.gnolia.com/beta/bookmarklet/add?url=#URL#&amp;amp;title=#TITLE#&amp;amp;description=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/magnolia.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="28">
+    <site_id>28</site_id>
+    <site_title>Mr Wong</site_title>
+    <home_url>hhtp://www.mister-wong.de</home_url>
+    <submit_url>http://www.mister-wong.de/index.php?action=addurl&amp;amp;bm_url=#URL#&amp;amp;bm_description=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/mrwong.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="29">
+    <site_id>29</site_id>
+    <site_title>Yahoo MyWeb</site_title>
+    <home_url>http://myweb2.search.yahoo.com</home_url>
+    <submit_url>http://myweb2.search.yahoo.com/myresults/bookmarklet?u=#URL#&amp;amp;=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/myyahoo.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="30">
+    <site_id>30</site_id>
+    <site_title>Netscape</site_title>
+    <home_url>http://www.netscape.com</home_url>
+    <submit_url>http://www.netscape.com/submit/?U=#URL#&amp;amp;T=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/netscape.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="31">
+    <site_id>31</site_id>
+    <site_title>Netvouz</site_title>
+    <home_url>http://www.netvouz.com</home_url>
+    <submit_url>http://www.netvouz.com/action/submitBookmark?url=#URL#&amp;amp;title=#TITLE#&amp;amp;description=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/netvouz.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="32">
+    <site_id>32</site_id>
+    <site_title>Newsvine</site_title>
+    <home_url>http://www.newsvine.com</home_url>
+    <submit_url>http://www.newsvine.com/_tools/seed&amp;amp;save?u=#URL#&amp;amp;h=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/newsvine.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="33">
+    <site_id>33</site_id>
+    <site_title>Onlywire</site_title>
+    <home_url>http://www.onlywire.com</home_url>
+    <submit_url>http://www.onlywire.com/b/?u=#URL#&amp;amp;t=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/onlywire.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="34">
+    <site_id>34</site_id>
+    <site_title>PlugIM</site_title>
+    <home_url>http://www.plugim.com</home_url>
+    <submit_url>http://www.plugim.com/submit?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/plugim.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="35">
+    <site_id>35</site_id>
+    <site_title>PopCurrent</site_title>
+    <home_url>http://popcurrent.com</home_url>
+    <submit_url>http://popcurrent.com/submit?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/popcurrent.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="36">
+    <site_id>36</site_id>
+    <site_title>PPNow</site_title>
+    <home_url>http://www.ppnow.net</home_url>
+    <submit_url>http://www.ppnow.net/submit.php?url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/ppnow.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="37">
+    <site_id>37</site_id>
+    <site_title>RawSugar</site_title>
+    <home_url>http://www.rawsugar.com</home_url>
+    <submit_url>http://www.rawsugar.com/tagger/?turl=#URL#&amp;amp;tttl=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/rawsugar.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="38">
+    <site_id>38</site_id>
+    <site_title>Recruiting</site_title>
+    <home_url>http://www.recruiting.com</home_url>
+    <submit_url>http://www.recruiting.com/storylink/vote?edit[url]=#URL#&amp;amp;edit[title]=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/rplus.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="39">
+    <site_id>39</site_id>
+    <site_title>Reddit</site_title>
+    <home_url>http://reddit.com</home_url>
+    <submit_url>http://reddit.com/submit?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/reddit.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="40">
+    <site_id>40</site_id>
+    <site_title>Rojo</site_title>
+    <home_url>http://www.rojo.com</home_url>
+    <submit_url>http://www.rojo.com/submit/?url=#URL#&amp;amp;title=#TITLE#&amp;amp;summary=&amp;amp;ready=true</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/rojo.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="41">
+    <site_id>41</site_id>
+    <site_title>Scoopeo</site_title>
+    <home_url>http://www.scoopeo.com</home_url>
+    <submit_url>http://www.scoopeo.com/scoop/new?newurl=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/scoopeo.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="42">
+    <site_id>42</site_id>
+    <site_title>Scuttle</site_title>
+    <home_url>http://www.scuttle.org</home_url>
+    <submit_url>http://www.scuttle.org/bookmarks.php/maxpower?action=add&amp;amp;address=#URL#&amp;amp;title=#TITLE#&amp;amp;description=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/scuttle.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="43">
+    <site_id>43</site_id>
+    <site_title>Shadows</site_title>
+    <home_url>http://www.shadows.com</home_url>
+    <submit_url>http://www.shadows.com/features/tcr.htm?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/shadows.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="44">
+    <site_id>44</site_id>
+    <site_title>Simpy</site_title>
+    <home_url>http://www.simpy.com</home_url>
+    <submit_url>http://www.simpy.com/simpy/LinkAdd.do?href=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/simpy.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="45">
+    <site_id>45</site_id>
+    <site_title>Slashdot</site_title>
+    <home_url>http://www.slashdot.org</home_url>
+    <submit_url>http://slashdot.org/bookmark.pl?title=#TITLE#&amp;amp;url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/slashdot.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="46">
+    <site_id>46</site_id>
+    <site_title>Smarking</site_title>
+    <home_url>http://smarking.com</home_url>
+    <submit_url>http://smarking.com/editbookmark/?url=#URL#&amp;amp;description=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/smarking.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="47">
+    <site_id>47</site_id>
+    <site_title>SphereIt</site_title>
+    <home_url>http://www.sphere.com</home_url>
+    <submit_url>http://www.sphere.com/search?q=sphereit:#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/sphere.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="48">
+    <site_id>48</site_id>
+    <site_title>Spurl</site_title>
+    <home_url>http://www.spurl.net</home_url>
+    <submit_url>http://www.spurl.net/spurl.php?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/spurl.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="49">
+    <site_id>49</site_id>
+    <site_title>Squidoo</site_title>
+    <home_url>http://www.squidoo.com</home_url>
+    <submit_url>http://www.squidoo.com/lensmaster/bookmark?#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/squidoo.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="50">
+    <site_id>50</site_id>
+    <site_title>StumbleUpon</site_title>
+    <home_url>http://www.stumbleupon.com</home_url>
+    <submit_url>http://www.stumbleupon.com/submit?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/stumbleupon.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="51">
+    <site_id>51</site_id>
+    <site_title>Taggly</site_title>
+    <home_url>http://taggly.com</home_url>
+    <submit_url>http://taggly.com/bookmarks.php/pass?action=add&amp;amp;address=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/taggly.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="52">
+    <site_id>52</site_id>
+    <site_title>Tagtooga</site_title>
+    <home_url>http://www.tagtooga.com</home_url>
+    <submit_url>http://www.tagtooga.com/tapp/db.exe?c=jsEntryForm&amp;amp;b=fx&amp;amp;title=#TITLE#&amp;amp;url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/tagtooga.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="53">
+    <site_id>53</site_id>
+    <site_title>TailRank</site_title>
+    <home_url>http://tailrank.com</home_url>
+    <submit_url>http://tailrank.com/share/?text=&amp;amp;link_href=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/tailrank.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="54">
+    <site_id>54</site_id>
+    <site_title>TalkDigger</site_title>
+    <home_url>http://www.talkdigger.com</home_url>
+    <submit_url>http://www.talkdigger.com/index.php?surl=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/talkdigger.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="55">
+    <site_id>55</site_id>
+    <site_title>Technorati</site_title>
+    <home_url>http://www.technorati.com</home_url>
+    <submit_url>http://www.technorati.com/faves?add=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/technorati.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="56">
+    <site_id>56</site_id>
+    <site_title>ThisNext</site_title>
+    <home_url>http://www.thisnext.com</home_url>
+    <submit_url>http://www.thisnext.com/pick/new/submit/sociable/?url=#URL#&amp;amp;name=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/thisnext.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="57">
+    <site_id>57</site_id>
+    <site_title>WebRide</site_title>
+    <home_url>http://webride.org</home_url>
+    <submit_url>http://webride.org/discuss/split.php?uri=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/webride.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="58">
+    <site_id>58</site_id>
+    <site_title>Wists</site_title>
+    <home_url>http://wists.com/</home_url>
+    <submit_url>http://wists.com/s.php?c=&amp;amp;r=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/wists.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="59">
+    <site_id>59</site_id>
+    <site_title>JeQQ</site_title>
+    <home_url>http://jeqq.com</home_url>
+    <submit_url>http://jeqq.com/submit.php?phase=2&amp;amp;url=#URL#&amp;amp;title=#TITLE#&amp;amp;body=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/jeqq.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="60">
+    <site_id>60</site_id>
+    <site_title>co.mments</site_title>
+    <home_url>http://co.mments.com</home_url>
+    <submit_url>http://co.mments.com/track?url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/co.mments.gif</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="61">
+    <site_id>61</site_id>
+    <site_title>Fleck</site_title>
+    <home_url>http://fleck.com</home_url>
+    <submit_url>http://extension.fleck.com/?v=b.0.804&amp;amp;url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/fleck.gif</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="62">
+    <site_id>62</site_id>
+    <site_title>Gwar</site_title>
+    <home_url>http://www.gwar.pl</home_url>
+    <submit_url>http://www.gwar.pl/DodajGwar.html?u=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/gwar.gif</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="63">
+    <site_id>63</site_id>
+    <site_title>Hemidemi</site_title>
+    <home_url>http://www.hemidemi.com</home_url>
+    <submit_url>http://www.hemidemi.com/user_bookmark/new?title=#TITLE#&amp;amp;url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/hemidemi.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="64">
+    <site_id>64</site_id>
+    <site_title>IndiaGram</site_title>
+    <home_url>http://www.indiagram.com</home_url>
+    <submit_url>http://www.indiagram.com/mock/bookmarks/desitrain?action=add&amp;amp;address=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/indiagram.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="65">
+    <site_id>65</site_id>
+    <site_title>IndianPad</site_title>
+    <home_url>http://www.indianpad.com</home_url>
+    <submit_url>http://www.indianpad.com/submite.php?url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/indianpad.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="66">
+    <site_id>66</site_id>
+    <site_title>Linkter</site_title>
+    <home_url>http://www.linkter.hu</home_url>
+    <submit_url>http://www.linkter.hu/index.php?action=suggest_link&amp;amp;url=#URL#&amp;amp;title=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/linkter.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="67">
+    <site_id>67</site_id>
+    <site_title>MyShare</site_title>
+    <home_url>http://myshare.url.com.tw</home_url>
+    <submit_url>http://myshare.url.com.tw/index.php?func=newurl&amp;amp;url=#URL#&amp;amp;desc=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/myshare.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="68">
+    <site_id>68</site_id>
+    <site_title>Rec6</site_title>
+    <home_url>http://www.syxt.com.br</home_url>
+    <submit_url>http://www.syxt.com.br/rec6/link.php?url=#URL#&amp;amp;=#TITLE#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/rec6.gif</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="69">
+    <site_id>69</site_id>
+    <site_title>Wykop</site_title>
+    <home_url>http://www.wykop.pl</home_url>
+    <submit_url>http://www.wykop.pl/dodaj?url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/wykop.gif</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="70">
+    <site_id>70</site_id>
+    <site_title>OKNO</site_title>
+    <home_url>http://oknotizie.alice.it</home_url>
+    <submit_url>http://oknotizie.alice.it/post?title=#TITLE#&amp;amp;url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/okno.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="71">
+    <site_id>71</site_id>
+    <site_title>Segnalo</site_title>
+    <home_url>http://segnalo.alice.it</home_url>
+    <submit_url>http://segnalo.alice.it/post.html.php?title=#TITLE#&amp;amp;url=#URL#</submit_url>
+    <site_icon_url>modules/sharecontent/xarimages/segnalo.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+  <sharecontent itemid="72">
+    <site_id>72</site_id>
+    <site_title>ZicZac</site_title>
+    <home_url>http://ziczac.it/</home_url>
+    <submit_url>http://ziczac.it/a/segnala/?gurl=#URL#&amp;amp;gtit=#TITLE#</submit_url>
+    <site_icon_url>http://ziczac.it/a/e/zzsmall.png</site_icon_url>
+    <display_status>1</display_status>
+  </sharecontent>
+</items>

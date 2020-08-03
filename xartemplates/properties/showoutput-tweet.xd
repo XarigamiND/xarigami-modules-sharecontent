@@ -1,0 +1,17 @@
+<xar:style scope="module" module="sharecontent" file="sharecontent" />
+
+<div class="xar-padding-thin">
+            <xar:set name="twitterjs">
+            '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");'
+            </xar:set>
+            <xar:if condition="$tweettype eq 'twitter-follow-button'">
+                <a href="https://twitter.com/#$tweetname#" class="twitter-follow-button" data-show-count="#$showit#" data-size="#$largebutton#" data-show-screen-name="#$showname#"><xar:mlstring>Follow</xar:mlstring> @#$tweetname#</a>
+            <xar:elseif condition="$tweettype eq 'button_hashtag'" />
+                 <a href="https://twitter.com/intent/tweet?button_hashtag=#$hashtag#&amp;text=#$tweettext#"" class="twitter-hashtag-button" data-size="#$largebutton#"  data-related="#$recommend#"><xar:mlstring>Tweet</xar:mlstring> ###$hashtag#</a>
+            <xar:elseif condition="$tweettype eq 'screen_name'" />
+                <a href="https://twitter.com/intent/tweet?screen_name=#$tweetname#&amp;text=#$tweettext#" class="twitter-mention-button" data-size="#$largebutton#" data-related="#$recommend#"><xar:mlstring>Tweet to </xar:mlstring> @#$tweetname#</a>
+            <xar:else  />
+                <a href="https://twitter.com/share&amp;url=#$tweeturl#" data-counturl="#$counturl#" class="twitter-share-button"  data-count="#$showcount#" data-text="#$tweettext#" data-size="#$largebutton#" data-related="#$recommend#" data-hashtags="#$hashtag#" data-via="#$tweetname#"><xar:mlstring>Tweet</xar:mlstring></a>
+            </xar:if>
+            <xar:base-include-javascript type="code" code="$twitterjs" position="body"/>
+</div>

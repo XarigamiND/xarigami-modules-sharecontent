@@ -1,0 +1,72 @@
+<object name="sharecontent">
+  <objectid>24</objectid>
+  <label>Sharecontent Sites</label>
+  <moduleid>894</moduleid>
+  <itemtype>0</itemtype>
+  <urlparam>itemid</urlparam>
+  <maxid>72</maxid>
+  <config>a:0:{}</config>
+  <isalias>1</isalias>
+  <properties>
+    <property name="site_id">
+      <id>196</id>
+      <label>Site ID</label>
+      <type>itemid</type>
+      <default></default>
+      <source>xar_sharecontent.xar_id</source>
+      <status>1</status>
+      <order>1</order>
+      <validation></validation>
+    </property>
+    <property name="site_title">
+      <id>197</id>
+      <label>Site Title</label>
+      <type>textbox</type>
+      <default></default>
+      <source>xar_sharecontent.xar_title</source>
+      <status>1</status>
+      <order>2</order>
+      <validation></validation>
+    </property>
+    <property name="home_url">
+      <id>198</id>
+      <label>Home URL</label>
+      <type>url</type>
+      <default></default>
+      <source>xar_sharecontent.xar_homeurl</source>
+      <status>1</status>
+      <order>3</order>
+      <validation></validation>
+    </property>
+    <property name="submit_url">
+      <id>199</id>
+      <label>Submit URL</label>
+      <type>url</type>
+      <default></default>
+      <source>xar_sharecontent.xar_submiturl</source>
+      <status>2</status>
+      <order>4</order>
+      <validation></validation>
+    </property>
+    <property name="site_icon_url">
+      <id>200</id>
+      <label>Site Icon URL</label>
+      <type>image</type>
+      <default></default>
+      <source>xar_sharecontent.xar_image</source>
+      <status>1</status>
+      <order>5</order>
+      <validation>a:9:{s:7:"xv_size";s:2:"50";s:13:"xv_allowempty";s:1:"1";s:17:"xv_display_layout";s:7:"default";s:12:"xv_cansearch";s:1:"1";s:15:"xv_image_source";s:3:"url";s:11:"xv_file_ext";s:20:"gif,jpg,jpeg,png,bmp";s:19:"xv_allow_duplicates";s:1:"0";s:16:"xv_max_file_size";s:7:"1000000";s:15:"xv_output_units";s:2:"px";}</validation>
+    </property>
+    <property name="display_status">
+      <id>201</id>
+      <label>Display Status</label>
+      <type>checkbox</type>
+      <default></default>
+      <source>xar_sharecontent.xar_active</source>
+      <status>1</status>
+      <order>6</order>
+      <validation>a:4:{s:13:"xv_allowempty";s:1:"1";s:17:"xv_display_layout";s:7:"default";s:12:"xv_cansearch";s:1:"1";s:11:"xv_hasvalue";s:6:"Active";}</validation>
+    </property>
+  </properties>
+</object>
