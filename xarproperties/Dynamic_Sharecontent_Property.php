@@ -237,7 +237,7 @@ class Dynamic_Sharecontent_Property extends Dynamic_Property
         $data['websitevalues'] = implode(',',$websitevalues);
         $data['websitearray'] = $websitearray;
         $data['websites'] = $websites;
-        $data['websitenum'] = count($websites);
+        $data['websitenum'] = isset($websites) ? count($websites) : 0;
         $data['enablemail'] = $enablemail;
         $data['shownames'] = isset($validationargs['shownames'])?$validationargs['shownames']:0;
         $data['usejs'] = isset($validationargs['usejs'])?$validationargs['usejs']:0;
