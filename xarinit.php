@@ -133,7 +133,7 @@ function sharecontent_upgrade($oldversion)
                     $websites= array();
                 }
                 // Save  websites
-                foreach ($websites2 as $website) {
+                foreach ($websites as $website) {
                     list($title,$homeurl,$submiturl,$image,$active) = $website;
                     $nextId = $dbconn->GenId($xartable['sharecontent']);
                     $query = "INSERT INTO $xartable[sharecontent] (xar_id,xar_title, xar_homeurl, xar_submiturl, xar_image,xar_active) VALUES (?,?,?,?,?,?)";
@@ -160,15 +160,6 @@ function sharecontent_upgrade($oldversion)
                     $websites= array();
                 }
 
-                // Save  websites
-                foreach ($websites3 as $website) {
-                    list($title,$homeurl,$submiturl,$image,$active) = $website;
-                    $nextId = $dbconn->GenId($xartable['sharecontent']);
-                    $query = "INSERT INTO $xartable[sharecontent] (xar_id,xar_title, xar_homeurl, xar_submiturl, xar_image,xar_active) VALUES (?,?,?,?,?,?)";
-                    $bindvars = array($nextId,$title,$homeurl,$submiturl,$image,$active);
-                    $result = $dbconn->Execute($query,$bindvars);
-                    if (!$result)  sharecontent_delete();
-                }
             }
         case '0.9.5':
         //fall through - update to signify template changes for jquery and xarigami
@@ -197,10 +188,10 @@ function sharecontent_upgrade($oldversion)
                 include sys::code().'modules/sharecontent/xarsetup.php';
             } else {
                 // TODO: add some defaults here
-                $websites4= array();
+                $websites2= array();
             }
             // Save  websites
-                foreach ($websites4 as $website) {
+                foreach ($websites2 as $website) {
                     list($title,$homeurl,$submiturl,$image,$active) = $website;
                     $nextId = $dbconn->GenId($xartable['sharecontent']);
                     $query = "INSERT INTO $xartable[sharecontent] (xar_id,xar_title, xar_homeurl, xar_submiturl, xar_image,xar_active) VALUES (?,?,?,?,?,?)";
