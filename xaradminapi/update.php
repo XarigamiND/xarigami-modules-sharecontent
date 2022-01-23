@@ -42,12 +42,12 @@ function sharecontent_adminapi_update($args)
             }
         }
         if ($activate) {
-            $whereactivate = implode($activate,' OR ');
+            $whereactivate = implode(' OR ', $activate);
         } else {
             $whereactivate = '0';
         }
         if ($deactivate) {
-        $wheredeactivate = implode($deactivate,' OR ');
+        $wheredeactivate = implode(' OR ', $deactivate);
         } else {
             $wheredeactivate = '0';
         }
